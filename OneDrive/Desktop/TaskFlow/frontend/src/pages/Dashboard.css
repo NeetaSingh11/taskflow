@@ -1,0 +1,101 @@
+.dashboard{
+
+    padding:40px;
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        to bottom,
+        #f8fbff,
+        #eef4ff
+    );
+
+}
+
+.dashboard-title{
+    font-size:36px;
+    color:#111827;
+    font-weight:700;
+    margin-bottom:35px;
+    margin-left:5px;
+}
+
+.task-section-title{
+
+    margin:35px 0 20px;
+
+    color:#1f2937;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    padding:60px;
+
+    gap:18px;
+
+}
+
+.spinner{
+
+    width:55px;
+
+    height:55px;
+
+    border:5px solid #dbeafe;
+
+    border-top:5px solid #2563eb;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+.loading p{
+
+    font-size:18px;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard{
+
+        padding:20px;
+
+    }
+
+    .dashboard-title{
+
+        font-size:28px;
+
+    }
+
+}

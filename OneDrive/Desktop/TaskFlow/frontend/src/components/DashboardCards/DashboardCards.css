@@ -1,0 +1,73 @@
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin:35px 0;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+    border-top:5px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.card-top{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.card-icon{
+    font-size:28px;
+}
+
+.card h3{
+    color:#555;
+    font-size:18px;
+    font-weight:600;
+    margin:0;
+}
+
+.card h2{
+    font-size:42px;
+    color:#111827;
+    margin:0;
+}
+
+/* Colored Borders */
+
+.total-card{
+    border-top-color:#2563eb;
+}
+
+.pending-card{
+    border-top-color:#f59e0b;
+}
+
+.completed-card{
+    border-top-color:#22c55e;
+}
+
+.progress-card{
+    border-top-color:#8b5cf6;
+}
+
+@media(max-width:768px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}

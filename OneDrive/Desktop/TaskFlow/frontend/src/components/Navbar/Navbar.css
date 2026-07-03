@@ -1,0 +1,105 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    background: linear-gradient(135deg,#2563eb,#3b82f6);
+
+    box-shadow: 0 6px 20px rgba(37,99,235,.18);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:28px;
+    font-weight:700;
+    color:white;
+}
+
+.logo span{
+    letter-spacing:.5px;
+}
+
+.nav-center h3{
+    color:white;
+    font-size:24px;
+    font-weight:600;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.welcome{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:white;
+}
+
+.welcome p{
+    margin:0;
+    font-size:15px;
+    font-weight:500;
+}
+
+.welcome span{
+    font-size:22px;
+}
+
+.nav-right button{
+    padding:10px 22px;
+
+    border:none;
+    border-radius:10px;
+
+    background:white;
+    color:#2563eb;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.nav-right button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .nav-center{
+        display:none;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .nav-right{
+        gap:15px;
+    }
+
+    .nav-right button{
+        padding:8px 16px;
+    }
+}
